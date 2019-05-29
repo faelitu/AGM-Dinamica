@@ -133,12 +133,11 @@ public class AGM {
             Ponto p2 = a.getB();
             
             //compara se árvore de p1 é igual à árvore de p2
-            //TODO rever esse pedaço de código comentado
-            /*boolean igual = false;
+            boolean igual = false;
             int posP1 = 0, posP2 = 0;
             for (Arvore t : trees) {
                 for (int i = 0; i < t.getPontos().size(); i++) {
-                    if ((t.getPontos().get(i).getId() == p1.getId() || t.getPontos().get(i).getId() == p2.getId()) && p1 != null && p2 != null) {
+                    if (p1 != null && p2 != null && (t.getPontos().get(i).getId() == p1.getId() || t.getPontos().get(i).getId() == p2.getId())) {
                         if (t.getPontos().get(i).getId() == p1.getId()) {
                             posP1 = i;
                             for (int j = i; j < t.getPontos().size(); j++) {
@@ -158,7 +157,7 @@ public class AGM {
                         }
                     }
                 }
-            }*/
+            }
             
             //se a árvore de p1 e de p2 forem diferentes:
             if (!igual) {
